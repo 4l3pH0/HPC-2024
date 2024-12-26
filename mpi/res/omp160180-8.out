@@ -1,0 +1,43 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1283699: <mpiexec ./omp160180> in cluster <MSUCluster> Done
+
+Job <mpiexec ./omp160180> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Wed Dec 18 06:38:51 2024
+Job was executed on host(s) <polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <normal>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Wed Dec 18 06:38:51 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/mpi/isit/fin> was used as the working directory.
+Started at Wed Dec 18 06:38:51 2024
+Terminated at Wed Dec 18 06:41:41 2024
+Results reported at Wed Dec 18 06:41:41 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec ./omp160180
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1351.26 sec.
+    Max Memory :                                 72 MB
+    Average Memory :                             69.27 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                18
+    Run time :                                   173 sec.
+    Turnaround time :                            170 sec.
+
+The output (if any) follows:
+
+OpenMP is supported!
+377170 168.863649
+
+
+PS:
+
+Read file <omp160180-8.err> for stderr output of this job.
+

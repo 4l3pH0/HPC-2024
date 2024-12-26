@@ -1,0 +1,2 @@
+bsub -n 1 -o omp160180-1.out -e omp160180-1.err -R "affinity[core(1)]" -m "polus-c3-ib polus-c4-ib" -q normal "mpiexec ./omp160180"
+

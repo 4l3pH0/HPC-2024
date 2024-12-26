@@ -1,0 +1,437 @@
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=1
+    time(us): 1,079
+    455: compute region reached 1 time
+        455: kernel launched 1 time
+            grid: [983]  block: [128]
+             device time(us): total=31 max=31 min=31 avg=31
+            elapsed time(us): total=144 max=144 min=144 avg=144
+    455: data region reached 2 times
+        455: data copyin transfers: 32
+             device time(us): total=390 max=40 min=4 avg=12
+        700: data copyout transfers: 32
+             device time(us): total=519 max=52 min=8 avg=16
+    540: update directive reached 4 times
+        540: data copyout transfers: 4
+             device time(us): total=36 max=15 min=7 avg=9
+    578: compute region reached 1 time
+        578: kernel launched 1 time
+            grid: [983]  block: [128]
+             device time(us): total=26 max=26 min=26 avg=26
+            elapsed time(us): total=52 max=52 min=52 avg=52
+    578: update directive reached 4 times
+        578: data copyin transfers: 4
+             device time(us): total=21 max=6 min=5 avg=5
+    644: compute region reached 1 time
+        644: kernel launched 1 time
+            grid: [983]  block: [128]
+             device time(us): total=7 max=7 min=7 avg=7
+            elapsed time(us): total=28 max=28 min=
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 1,030
+    455: compute region reached 1 time
+        455: kernel launched 1 time
+            grid: [979]  block: [128]
+             device time(us): total=32 max=32 min=32 avg=32
+            elapsed time(us): total=115 max=115 min=115 avg=115
+    455: data region reached 2 times
+        455: data copyin transfers: 32
+             device time(us): total=368 max=38 min=4 avg=11
+        700: data copyout transfers: 32
+             device time(us): total=492 max=52 min=7 avg=15
+    540: update directive reached 4 times
+        540: data copyout transfers: 4
+             device time(us): total=36 max=14 min=7 avg=9
+    578: compute region reached 1 time
+        578: kernel launched 1 time
+            grid: [979]  block: [128]
+             device time(us): total=25 max=25 min=25 avg=25
+            elapsed time(us): total=50 max=50 min=50 avg=50
+    578: update directive reached 4 times
+        578: data copyin transfers: 4
+             device time(us): total=21 max=6 min=5 avg=5
+    644: compute region reached 1 time
+        644: kernel launched 1 time
+            grid: [979]  block: [128]
+             device time(us): total=8 max=8 min=8 avg=8
+            elapsed time(us): total=27 max=27 min=27 avg=27
+        644: reduction kernel launched 1 time
+            grid: [2]  block: [256]
+             device time(us): total=4 max=4 min=4 avg=4
+            elapsed time(us): total=23 max=23 min=28 avg=28
+        644: reduction kernel launched 1 time
+            grid: [2]  block: [256]
+             device time(us): total=4 max=4 min=4 avg=4
+            elapsed time(us): total=23 max=23 min=23 avg=23
+    644: data region reached 2 times
+        644: data copyin transfers: 1
+23 avg=23
+    644: data region reached 2 times
+        644: data copyin transfers: 1
+             device time(us): total=5 max=5 min=5 avg=5
+        650: data copyout transfers: 1
+             device time(us): total=8 max=8 min=8 avg=8
+    654: compute region reached 1 time
+        654: kernel launched 1 time
+            grid: [979]  block: [128]
+             device time(us): total=7 max=7 min=7 avg=7
+            elapsed time(us): total=             device time(us): total=6 max=6 min=6 avg=6
+        650: data copyout transfers: 1
+             device time(us): total=8 max=8 min=8 avg=8
+    654: compute region reached 1 time
+        654: kernel launched 1 time
+27 max=27 min=27 avg=27
+        654: reduction kernel launched 1 time
+            grid: [2]  block: [256]
+             device time(us): total=4 max=4 min=4 avg=4
+            elapsed time(us): total=23 max=23 min=23 avg=23
+    654: data region reached 2 times
+        654: data copyin transfers: 1
+            grid: [983]  block: [128]
+             device time(us): total=7 max=7 min=7 avg=7
+            elapsed time(us): total=27 max=27 min=27 avg=27
+        654: reduction kernel launched 1 time
+            grid: [2]  block: [256]
+             device time(us): total=4 max=4 min=4 avg=4
+            elapsed time(us): total=23 max=23 min=23 avg=23
+    654: data region reached 2 times
+        654: data copyin transfers: 1
+             device time(us): total=5 max=5 min=5 avg=5
+        660: data copyout transfers: 1
+             device time(us): total=7 max=7 min=7 avg=7
+    675: compute region reached 1 time
+        675: kernel launched 1 time
+            grid: [983]  block: [128]
+             device time(us): total=8 max=8 min=8 avg=8
+            elapsed time(us): total=30 max=30 min=30 avg=30
+             device time(us): total=5 max=5 min=5 avg=5
+        660: data copyout transfers: 1
+             device time(us): total=7 max=7 min=7 avg=7
+    675: compute region reached 1 time
+        675: kernel launched 1 time
+            grid: [979]  block: [128]
+             device time(us): total=8 max=8 min=8 avg=8
+            elapsed time(us): total=29 max=29 min=29 avg=29
+[polus-c3-ib:56700] *** Process received signal ***
+[polus-c3-ib:56700] Signal: Segmentation fault (11)
+[polus-c3-ib:56700] Signal code: Address not mapped (1)
+[polus-c3-ib:56700] Failing at address: 0x28
+[polus-c3-ib:56700] [ 0] [0x100000050478]
+[polus-c3-ib:56700] [ 1] [0x11000122e6b0]
+[polus-c3-ib:56700] [ 2] /polusfs/soft/PGI/linuxpower/18.4/lib/libaccnprof.so(activityCallback+0x188)[0x110000891e90]
+[polus-c3-ib:56700] [ 3] /usr/local/cuda-10.2/lib64/libcupti.so(+0x13a894)[0x1100009fa894]
+[polus-c3-ib:56700] [ 4] /usr/local/cuda-10.2/lib64/libcupti.so(+0x2edaec)[0x110000badaec]
+[polus-c3-ib:56700] [ 5] /lib64/libpthread.so.0(+0x8af4)[0x100001cf8af4]
+[polus-c3-ib:56700] [ 6] /lib64/libc.so.6(clone+0xe4)[0x100002024ef4]
+[polus-c3-ib:56700] *** End of error message ***
+[polus-c4-ib:74963] *** Process received signal ***
+[polus-c4-ib:74963] Signal: Segmentation fault (11)
+[polus-c4-ib:74963] Signal code: Invalid permissions (2)
+[polus-c4-ib:74963] Failing at address: 0x1000019e1160
+[polus-c4-ib:74963] [ 0] [0x100000050478]
+[polus-c4-ib:74963] [ 1] ./a.out[0x1000d318]
+[polus-c4-ib:74963] [ 2] /lib64/libc.so.6(+0x24980)[0x100001f24980]
+[polus-c4-ib:74963] [ 3] /lib64/libc.so.6(__libc_start_main+0xc4)[0x100001f24b74]
+[polus-c4-ib:74963] *** End of error message ***
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 1,571
+    455: data region reached 2 times
+        455: data copyin transfers: 34
+             device time(us): total=512 max=50 min=5 avg=15
+        694: data copyout transfers: 34
+             device time(us): total=632 max=60 min=9 avg=18
+    455: compute region reached 2 times
+        455: kernel launched 2 times
+            grid: [983]  block: [128]
+             device time(us): total=62 max=33 min=29 avg=31
+            elapsed time(us): total=277 max=219 min=58 avg=138
+    537: update directive reached 2 times
+        537: data copyout transfers: 8
+             device time(us): total=106 max=22 min=10 avg=13
+    572: compute region reached 2 times
+        572: kernel launched 2 times
+            grid: [983]  block: [128]
+             device time(us): total=52 max=26 min=26 avg=26
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=1
+    time(us): 1,622
+    455: data region reached 2 times
+        455: data copyin transfers: 34
+             device time(us): total=577 max=72 min=5 avg=16
+        694: data copyout transfers: 34
+             device time(us): total=621 max=54 min=9 avg=18
+    455: compute region reached 2 times
+        455: kernel launched 2 times
+            grid: [979]  block: [128]
+             device time(us): total=62 max=33 min=29 avg=31
+            elapsed time(us): total=277 max=219 min=58 avg=138
+    537: update directive reached 2 times
+        537: data copyout transfers: 8
+             device time(us): total=106 max=22 min=11 avg=13
+    572: compute region reached 2 times
+            elapsed time(us): total=106 max=54 min=52 avg=53
+    572: update directive reached 2 times
+        572: data copyin transfers: 8
+             device time(us): total=68 max=11 min=7 avg=8
+    638: compute region reached 2 times
+        638: kernel launched 2 times
+            grid: [983]  block: [128        572: kernel launched 2 times
+            grid: [979]  block: [128]
+             device time(us): total=52 max=26 min=26 avg=26
+            elapsed time(us): total=109 max=57 min=52 avg=54
+    572: update directive reached 2 times
+        572: data copyin transfers: 8
+]
+             device time(us): total=15 max=8 min=7 avg=7
+            elapsed time(us): total=69 max=36 min=33 avg=34
+        638: reduction kernel launched 2 times
+            grid: [             device time(us): total=69 max=13 min=6 avg=8
+    638: compute region reached 2 times
+        638: kernel launched 2 times
+            grid: [979]  block: [128]
+             device time(us): total=14 max=7 min=2]  block: [256]
+             device time(us): total=8 max=4 min=4 avg=4
+            elapsed time(us): total=57 max=30 min=27 avg=287 avg=7
+            elapsed time(us): total=69 max=36 min=33 avg=34
+        638: reduction kernel launched 2 times
+            grid: [2]  block: [256]
+             device time(us): total=8
+    638: data region reached 4 times
+        638: data copyin transfers: 2
+             device time(us): total=17 max=9 min=8 avg=8
+        644: data copyout transfers: 2
+             device time(us): total=23 max=13 min=10 avg= max=4 min=4 avg=4
+            elapsed time(us): total=59 max=32 min=27 avg=29
+    638: data region reached 4 times
+        638: data copyin transfers: 2
+             device time(us): total=1511
+    648: compute region reached 2 times
+        648: kernel launched 2 times
+            grid: [983]  block: [128]
+             device time(us): total=14 max=7 min=7 avg=7
+            elapsed time(us): total= max=8 min=7 avg=7
+        644: data copyout transfers: 2
+             device time(us): total=23 max=13 min=10 avg=11
+    648: compute region reached 2 times
+        648: kernel launched 2 times
+            grid: [68 max=36 min=32 avg=34
+        648: reduction kernel launched 2 times
+            grid: [2]  block: [256]
+             device time(us): total=8 max=4 min=4 avg=4979]  block: [128]
+             device time(us): total=14 max=7 min=7 avg=7
+            elapsed time(us): total=68 max=36 min=32 avg=34
+
+            elapsed time(us): total=56 max=29 min=27 avg=28
+    648: data region reached 4 times
+        648: data copyin transfers: 2
+             device time(us): total=14 max=8 min=6 avg=7
+        654: data copyout transfers: 2
+             device time(us): total=22 max=12 min=10 avg=11
+    669: compute region reached 2 times
+        669: kernel launched 2 times
+            grid: [983]  block: [128]
+             device time(us): total=18 max=9 min=9 avg=9
+            elapsed time(us): total=76 max=41 min=35 avg=38
+        648: reduction kernel launched 2 times
+            grid: [2]  block: [256]
+             device time(us): total=8 max=4 min=4 avg=4
+            elapsed time(us): total=56 max=29 min=27 avg=28
+    648: data region reached 4 times
+        648: data copyin transfers: 2
+             device time(us): total=14 max=8 min=6 avg=7
+        654: data copyout transfers: 2
+             device time(us): total=22 max=12 min=10 avg=11
+    669: compute region reached 2 times
+        669: kernel launched 2 times
+            grid: [979]  block: [128]
+             device time(us): total=17 max=9 min=8 avg=8
+            elapsed time(us): total=75 max=42 min=33 avg=37
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=1
+    time(us): 1,500
+    455: compute region reached 1 time
+        455: kernel launched 1 time
+            grid: [979]  block: [128]
+             device time(us): total=33 max=33 min=33 avg=33
+            elapsed time(us): total=205 max=205 min=205 avg=205
+    455: data region reached 2 times
+        455: data copyin transfers: 34
+             device time(us): total=618 max=80 min=5 avg=18
+        694: data copyout transfers: 34
+             device time(us): total=671 max=55 min=
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 1,344
+    455: compute region reached 1 time
+        455: kernel launched 1 time
+            grid: [983]  block: [128]
+             device time(us): total=32 max=32 min=32 avg=32
+            elapsed time(us): total=205 max=205 min=205 avg=205
+    455: data region reached 2 times
+        455: data copyin transfers: 34
+             device time(us): total=11 avg=19
+    537: update directive reached 1 time
+        537: data copyout transfers: 4
+             device time(us): total=56 max=23 min=11 avg=14
+    572: compute region reached 1 time
+        572: kernel launched 1 time
+            grid: [979]  block: [482 max=47 min=5 avg=14
+        694: data copyout transfers: 34
+             device time(us): total=648 max=57 min=11 avg=19
+    537: update directive reached 1 time
+        537: data copyout transfers: 4
+128]
+             device time(us): total=26 max=26 min=26 avg=26
+            elapsed time(us): total=51 max=51 min=51 avg=51             device time(us): total=56 max=23 min=11 avg=14
+    572: compute region reached 1 time
+        572: kernel launched 1 time
+            grid: [983]  block: [128]
+             device time(us): total=
+    572: update directive reached 1 time
+        572: data copyin transfers: 4
+             device time(us): total=29 max=8 min=7 avg=7
+    638: compute region reached 1 time
+        638: kernel launched 1 time
+            grid: [979]  block: [27 max=27 min=27 avg=27
+            elapsed time(us): total=51 max=51 min=51 avg=51
+    572: update directive reached 1 time
+128]
+             device time(us): total=7 max=7 min=7 avg=7
+            elapsed time(us): total=34 max=34 min=34 avg=34        572: data copyin transfers: 4
+             device time(us): total=29 max=8 min=7 avg=7
+    638: compute region reached 1 time
+        638: kernel launched 1 time
+            grid: [983]  block: [128]
+             device time(us):
+        638: reduction kernel launched 1 time
+            grid: [2]  block: [256]
+             device time(us): total=4 max=4 min=4 avg=4
+            elapsed time(us): total=30 max= total=7 max=7 min=7 avg=7
+            elapsed time(us): total=34 max=34 min=34 avg=34
+        638: reduction kernel launched 1 time
+30 min=30 avg=30
+    638: data region reached 2 times
+        638: data copyin transfers: 1
+             device time(us): total=8 max=8 min=8 avg=8
+        644: data copyout transfers: 1
+            grid: [2]  block: [256]
+             device time(us): total=4 max=4 min=4 avg=4
+            elapsed time(us): total=30 max=30             device time(us): total=10 max=10 min=10 avg=10
+    648: compute region reached 1 time
+        648: kernel launched 1 time
+            grid: [979]  block: [128]
+             device time(us): total=7 min=30 avg=30
+    638: data region reached 2 times
+        638: data copyin transfers: 1
+             device time(us): total=10 max=10 min=10 avg=10
+        644: data copyout transfers: 1
+ max=7 min=7 avg=7
+            elapsed time(us): total=32 max=32 min=32 avg=32
+        648: reduction kernel launched 1 time
+            grid: [2             device time(us): total=11 max=11 min=11 avg=11
+    648: compute region reached 1 time
+        648: kernel launched 1 time
+            grid: [983]  block: [128]
+             device time(us): total=]  block: [256]
+             device time(us): total=4 max=4 min=4 avg=4
+            elapsed time(us): total=29 max=29 min=29 avg=29
+    648: data region reached 2 times
+        648: data copyin transfers: 1
+             device time(us): total=7 max=7 min=7 avg=7
+        654: data copyout transfers: 1
+             device time(us): total=10 max=10 min=10 avg=10
+    669: compute region reached 1 time
+        669: kernel launched 1 time
+            grid: [979]  block: [128]
+             device time(us): total=10 max=10 min=10 avg=10
+            elapsed time(us): total=40 max=40 min=40 avg=40
+7 max=7 min=7 avg=7
+            elapsed time(us): total=33 max=33 min=33 avg=33
+        648: reduction kernel launched 1 time
+            grid: [2]  block: [256]
+             device time(us): total=4 max=4 min=4 avg=4
+            elapsed time(us): total=28 max=28 min=28 avg=28
+    648: data region reached 2 times
+        648: data copyin transfers: 1
+             device time(us): total=7 max=7 min=7 avg=7
+        654: data copyout transfers: 1
+             device time(us): total=11 max=11 min=11 avg=11
+    669: compute region reached 1 time
+        669: kernel launched 1 time
+            grid: [983]  block: [128]
+             device time(us): total=9 max=9 min=9 avg=9
+            elapsed time(us): total=41 max=41 min=41 avg=41
+[polus-c3-ib:58908] *** Process received signal ***
+[polus-c3-ib:58908] Signal: Segmentation fault (11)
+[polus-c3-ib:58908] Signal code: Address not mapped (1)
+[polus-c3-ib:58908] Failing at address: 0x28
+[polus-c3-ib:58908] [ 0] [0x100000050478]
+[polus-c3-ib:58908] [ 1] [0x11000122e6b0]
+[polus-c3-ib:58908] [ 2] /polusfs/soft/PGI/linuxpower/18.4/lib/libaccnprof.so(activityCallback+0x188)[0x110000891e90]
+[polus-c3-ib:58908] [ 3] /usr/local/cuda-10.2/lib64/libcupti.so(+0x13a894)[0x1100009fa894]
+[polus-c3-ib:58908] [ 4] /usr/local/cuda-10.2/lib64/libcupti.so(+0x2edaec)[0x110000badaec]
+[polus-c3-ib:58908] [ 5] /lib64/libpthread.so.0(+0x8af4)[0x100001cf8af4]
+[polus-c3-ib:58908] [ 6] /lib64/libc.so.6(clone+0xe4)[0x100002024ef4]
+[polus-c3-ib:58908] *** End of error message ***
+[polus-c3-ib:60155] *** Process received signal ***
+[polus-c3-ib:60156] *** Process received signal ***
+[polus-c3-ib:60155] Signal: Segmentation fault (11)
+[polus-c3-ib:60155] Signal code: Address not mapped (1)
+[polus-c3-ib:60155] Failing at address: 0x676cf101
+[polus-c3-ib:60156] Signal: Segmentation fault (11)
+[polus-c3-ib:60156] Signal code: Address not mapped (1)
+[polus-c3-ib:60156] Failing at address: 0x676cf101
+[polus-c3-ib:60155] [ 0] [0x100000050478]
+[polus-c3-ib:60155] [ 1] [polus-c3-ib:60156] [ 0] [0x100000050478]
+[polus-c3-ib:60156] [ 1] ./a.out[0x1000d408]
+[polus-c3-ib:60156] [ 2] ./a.out[0x1000d408]
+[polus-c3-ib:60155] [ 2] /lib64/libc.so.6(+0x24980)[0x100001f24980]
+[polus-c3-ib:60156] [ 3] /lib64/libc.so.6(+0x24980)[0x100001f24980]
+[polus-c3-ib:60155] [ 3] /lib64/libc.so.6(__libc_start_main+0xc4)[0x100001f24b74]
+[polus-c3-ib:60155] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xc4)[0x100001f24b74]
+[polus-c3-ib:60156] *** End of error message ***
+[polus-c4-ib:77444] *** Process received signal ***
+[polus-c4-ib:77444] Signal: Segmentation fault (11)
+[polus-c4-ib:77444] Signal code: Address not mapped (1)
+[polus-c4-ib:77444] Failing at address: 0x28
+[polus-c4-ib:77444] [ 0] [0x100000050478]
+[polus-c4-ib:77444] [ 1] [0x11000122e6b0]
+[polus-c4-ib:77444] [ 2] /polusfs/soft/PGI/linuxpower/18.4/lib/libaccnprof.so(activityCallback+0x188)[0x110000891e90]
+[polus-c4-ib:77444] [ 3] /usr/local/cuda-10.2/lib64/libcupti.so(+0x13a894)[0x1100009fa894]
+[polus-c4-ib:77444] [ 4] /usr/local/cuda-10.2/lib64/libcupti.so(+0x2edaec)[0x110000badaec]
+[polus-c4-ib:77444] [ 5] /lib64/libpthread.so.0(+0x8af4)[0x100001cf8af4]
+[polus-c4-ib:77444] [ 6] /lib64/libc.so.6(clone+0xe4)[0x100002024ef4]
+[polus-c4-ib:77444] *** End of error message ***
+[polus-c3-ib:62603] *** Process received signal ***
+[polus-c3-ib:62602] *** Process received signal ***
+[polus-c3-ib:62603] Signal: Segmentation fault (11)
+[polus-c3-ib:62603] Signal code: Address not mapped (1)
+[polus-c3-ib:62603] Failing at address: 0x18
+[polus-c3-ib:62602] Signal: Segmentation fault (11)
+[polus-c3-ib:62602] Signal code: Address not mapped (1)
+[polus-c3-ib:62602] Failing at address: 0x18
+[polus-c3-ib:62603] [ 0] [0x100000050478]
+[polus-c3-ib:62603] [ 1] ./a.out[0x10015ed0]
+[polus-c3-ib:62602] [ 0] [0x100000050478]
+[polus-c3-ib:62602] [ 1] ./a.out[0x10015ed0]
+[polus-c3-ib:62602] [ 2] ./a.out[0x1000d930]
+[polus-c3-ib:62603] [ 2] ./a.out[0x1000d930]
+[polus-c3-ib:62603] [ 3] [polus-c3-ib:62602] [ 3] /lib64/libc.so.6(+0x24980)[0x100001f24980]
+[polus-c3-ib:62602] [ 4] /lib64/libc.so.6(+0x24980)[0x100001f24980]
+[polus-c3-ib:62603] [ 4] /lib64/libc.so.6(__libc_start_main+0xc4)[0x100001f24b74]
+[polus-c3-ib:62602] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xc4)[0x100001f24b74]
+[polus-c3-ib:62603] *** End of error message ***

@@ -1,0 +1,7 @@
+#BSUB -n 1
+#BSUB -J "my_job"
+#BSUB -o "true-omp8090-1.out"
+#BSUB -e "my_job%J.err"
+#BSUB -m "polus-c3-ib polus-c4-ib"
+#BSUB -R "affinity[core(1)]"
+mpiexec ./omp8090

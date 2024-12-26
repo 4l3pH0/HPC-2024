@@ -1,0 +1,1450 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297497: <mpiexec -n 2 ./160_180> in cluster <MSUCluster> Exited
+
+Job <mpiexec -n 2 ./160_180> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 02:36:37 2024
+Job was executed on host(s) <2*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 02:36:37 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 02:36:37 2024
+Terminated at Thu Dec 26 02:36:39 2024
+Results reported at Thu Dec 26 02:36:39 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./160_180
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.72 sec.
+    Max Memory :                                 23 MB
+    Average Memory :                             15.67 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   3 sec.
+    Turnaround time :                            2 sec.
+
+The output (if any) follows:
+
+call to cuMemcpyDtoHAsync returned error 1: Invalid value
+
+call to cuMemcpyDtoHAsync returned error 1: Invalid value
+
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=1
+    time(us): 222217
+    369: data region reached 2 times
+        369: data copyin transfers: 24
+             device time(us): total=214 max=23 min=6 avg=8
+    370: compute region reached 1 time
+        370: kernel launched 1 time
+            grid: [
+    369: data region reached 2 times
+        369: data copyin transfers: 24
+             device time(us): total=218 max=22 min=7 avg=9
+    381: compute region reached 1 time
+        381: kernel launched 1 time
+            grid: [2]  block: [128]
+2]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=205 max=205 min=205             device time(us): total=4 max=4 min=4 avg=4
+            elapsed time(us): total=205 max=205 min=205 avg=205
+ avg=205
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[15803,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297499: <mpiexec -n 2 ./a.out> in cluster <MSUCluster> Exited
+
+Job <mpiexec -n 2 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 02:52:26 2024
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 02:52:26 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 02:52:26 2024
+Terminated at Thu Dec 26 02:52:28 2024
+Results reported at Thu Dec 26 02:52:28 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./a.out
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.61 sec.
+    Max Memory :                                 23 MB
+    Average Memory :                             16.67 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   2 sec.
+    Turnaround time :                            2 sec.
+
+The output (if any) follows:
+
+call to cuMemcpyDtoHAsync returned error 1: Invalid value
+
+call to cuMemcpyDtoHAsync returned error 1: Invalid value
+
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=1
+    time(us): 161
+    369: data region reached 2 times
+        369: data copyin transfers: 24
+             device time(us): total=158 max=15 min=5 avg=6
+    381: compute region reached 1 time
+        381: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=144 max=144 min=144 avg=144
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 160
+    369: data region reached 2 times
+        369: data copyin transfers: 24
+             device time(us): total=157 max=13 min=5 avg=6
+    370: compute region reached 1 time
+        370: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=119 max=119 min=119 avg=119
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[25599,1],1]
+  Exit code:    1
+--------------------------------------------------------------------------
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297500: <mpiexec -n 2 ./a.out> in cluster <MSUCluster> Exited
+
+Job <mpiexec -n 2 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 02:57:02 2024
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 02:57:03 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 02:57:03 2024
+Terminated at Thu Dec 26 02:57:05 2024
+Results reported at Thu Dec 26 02:57:05 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./a.out
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.62 sec.
+    Max Memory :                                 23 MB
+    Average Memory :                             17.33 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   2 sec.
+    Turnaround time :                            3 sec.
+
+The output (if any) follows:
+
+0
+0
+call to cuMemcpyDtoHAsync returned error 1: Invalid value
+
+call to cuMemcpyDtoHAsync returned error 1: Invalid value
+
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 157
+    367: data region reached 2 times
+        367: data copyin transfers: 24
+             device time(us): total=154 max=13 min=5 avg=6
+    379: compute region reached 1 time
+        379: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=3
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=1
+    time(us):  max=3 min=3 avg=3
+            elapsed time(us): total=118 max=118 min=118 avg=118
+163
+    367: data region reached 2 times
+        367: data copyin transfers: 24
+             device time(us): total=160 max=15 min=5 avg=6
+    368: compute region reached 1 time
+        368: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=139 max=139 min=139 avg=139
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[25024,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297501: <mpiexec -n 2 ./a.out> in cluster <MSUCluster> Exited
+
+Job <mpiexec -n 2 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 02:59:05 2024
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 02:59:06 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 02:59:06 2024
+Terminated at Thu Dec 26 02:59:09 2024
+Results reported at Thu Dec 26 02:59:09 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./a.out
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.69 sec.
+    Max Memory :                                 23 MB
+    Average Memory :                             17.33 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   4 sec.
+    Turnaround time :                            4 sec.
+
+The output (if any) follows:
+
+call to cuMemcpyDtoHAsync returned error 1: Invalid value
+
+call to cuMemcpyDtoHAsync returned error 1: Invalid value
+
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=0
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=1
+
+    time(us): 213
+    367: data region reached 2 times
+        367: data copyin transfers: 24
+             device time(us): total=210 max=27 min=7 avg=8
+    368: compute region reached 1 time
+        368: kernel launched 1 time
+    time(us): 218
+    367: data region reached 2 times
+        367: data copyin transfers: 24
+             device time(us): total=215 max=17 min=7 avg=8
+    379: compute region reached 1 time
+        379: kernel launched 1 time
+            grid: [2]  block: [            grid: [2]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=208 max=208 min=128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=181 max=181 min=181 avg=181208 avg=208
+
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[24776,1],1]
+  Exit code:    1
+--------------------------------------------------------------------------
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297502: <mpiexec -n 2 ./a.out> in cluster <MSUCluster> Exited
+
+Job <mpiexec -n 2 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:00:51 2024
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:00:51 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 03:00:51 2024
+Terminated at Thu Dec 26 03:00:54 2024
+Results reported at Thu Dec 26 03:00:54 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./a.out
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.61 sec.
+    Max Memory :                                 23 MB
+    Average Memory :                             17.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   7 sec.
+    Turnaround time :                            3 sec.
+
+The output (if any) follows:
+
+0
+0
+call to cuMemcpyDtoHAsync returned error 1: Invalid value
+
+call to cuMemcpyDtoHAsync returned error 1: Invalid value
+
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=1
+    time(us): 
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=0163
+    366: data region reached 2 times
+        366: data copyin transfers: 24
+             device time(us): total=160 max=14 min=5 avg=6
+    378: compute region reached 1 time
+        378: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=3 max=3 min=3
+    time(us): 155
+    366: data region reached 2 times
+        366: data copyin transfers: 24
+             device time(us): total=152 max=13 min=5 avg=6
+    367: compute region reached 1 time
+        367: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=3 avg=3
+            elapsed time(us): total=139 max=139 min=139 avg=139
+ max=3 min=3 avg=3
+            elapsed time(us): total=120 max=120 min=120 avg=120
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[24482,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297503: <mpiexec -n 2 ./a.out> in cluster <MSUCluster> Exited
+
+Job <mpiexec -n 2 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:04:38 2024
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:04:39 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 03:04:39 2024
+Terminated at Thu Dec 26 03:04:42 2024
+Results reported at Thu Dec 26 03:04:42 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./a.out
+------------------------------------------------------------
+
+Exited with exit code 139.
+
+Resource usage summary:
+
+    CPU time :                                   0.79 sec.
+    Max Memory :                                 256 MB
+    Average Memory :                             172.67 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                21
+    Run time :                                   6 sec.
+    Turnaround time :                            4 sec.
+
+The output (if any) follows:
+
+0
+1
+0
+1
+[polus-c3-ib:25029] *** Process received signal ***
+[polus-c3-ib:25029] Signal: Segmentation fault (11)
+[polus-c3-ib:25029] Signal code: Invalid permissions (2)
+[polus-c3-ib:25029] Failing at address: 0x1003dbe2e00
+[polus-c3-ib:25028] *** Process received signal ***
+[polus-c3-ib:25028] Signal: Segmentation fault (11)
+[polus-c3-ib:25028] Signal code: Address not mapped (1)
+[polus-c3-ib:25028] Failing at address: 0x10024795910
+[polus-c3-ib:25028] [ 0] [0x100000050478]
+[polus-c3-ib:25028] [ 1] [0x8]
+[polus-c3-ib:25028] [ 2] /polusfs/soft/PGI/linuxpower/18.4/lib/libaccn.so(__pgi_uacc_cuda_dataup1+0x5c4)[0x1000019f8a74]
+[polus-c3-ib:25028] [ 3] /polusfs/soft/PGI/linuxpower/18.4/lib/libaccg.so(__pgi_uacc_dataup1+0x110)[0x1000019c1e50]
+[polus-c3-ib:25028] [ 4] /polusfs/soft/PGI/linuxpower/18.4/lib/libaccg.so(__pgi_uacc_dataupx+0x3b0)[0x1000019c2550]
+[polus-c3-ib:25028] [ 5] /polusfs/soft/PGI/linuxpower/18.4/lib/libaccg.so(__pgi_uacc_dataonb+0x6b0)[0x1000019c0a70]
+[polus-c3-ib:25028] [ 6] ./a.out[0x1000ba34]
+[polus-c3-ib:25028] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 1 with PID 0 on node polus-c3-ib exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297504: <mpiexec -n 2 ./a.out> in cluster <MSUCluster> Exited
+
+Job <mpiexec -n 2 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:06:39 2024
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:06:40 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 03:06:40 2024
+Terminated at Thu Dec 26 03:06:43 2024
+Results reported at Thu Dec 26 03:06:43 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./a.out
+------------------------------------------------------------
+
+Exited with exit code 139.
+
+Resource usage summary:
+
+    CPU time :                                   0.41 sec.
+    Max Memory :                                 95 MB
+    Average Memory :                             65.33 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                12
+    Run time :                                   2 sec.
+    Turnaround time :                            4 sec.
+
+The output (if any) follows:
+
+[polus-c3-ib:25227] *** Process received signal ***
+[polus-c3-ib:25228] *** Process received signal ***
+[polus-c3-ib:25228] Signal: Segmentation fault (11)
+[polus-c3-ib:25228] Signal code: Address not mapped (1)
+[polus-c3-ib:25228] Failing at address: 0x3f370a3d70a3d70a
+[polus-c3-ib:25227] Signal: Segmentation fault (11)
+[polus-c3-ib:25227] Signal code: Address not mapped (1)
+[polus-c3-ib:25227] Failing at address: 0xfffffffe00000000
+[polus-c3-ib:25227] [ 0] [0x100000050478]
+[polus-c3-ib:25227] [ 1] ./a.out[0x1000b880]
+[polus-c3-ib:25227] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 0 with PID 0 on node polus-c3-ib exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297505: <mpiexec -n 2 ./a.out> in cluster <MSUCluster> Exited
+
+Job <mpiexec -n 2 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:08:02 2024
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:08:03 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 03:08:03 2024
+Terminated at Thu Dec 26 03:08:07 2024
+Results reported at Thu Dec 26 03:08:07 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./a.out
+------------------------------------------------------------
+
+Exited with exit code 139.
+
+Resource usage summary:
+
+    CPU time :                                   0.41 sec.
+    Max Memory :                                 95 MB
+    Average Memory :                             65.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                12
+    Run time :                                   9 sec.
+    Turnaround time :                            5 sec.
+
+The output (if any) follows:
+
+0
+1
+0
+1
+[polus-c3-ib:25423] *** Process received signal ***
+[polus-c3-ib:25423] Signal: Segmentation fault (11)
+[polus-c3-ib:25423] Signal code: Address not mapped (1)
+[polus-c3-ib:25423] Failing at address: 0xfffffffe00000000
+[polus-c3-ib:25423] [ 0] [0x100000050478]
+[polus-c3-ib:25423] [ 1] ./a.out[0x1000b910]
+[polus-c3-ib:25423] *** End of error message ***
+[polus-c3-ib:25424] *** Process received signal ***
+[polus-c3-ib:25424] Signal: Segmentation fault (11)
+[polus-c3-ib:25424] Signal code: Address not mapped (1)
+[polus-c3-ib:25424] Failing at address: 0x3f370a3d70a3d70a
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 1 with PID 0 on node polus-c3-ib exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297506: <mpiexec -n 2 ./a.out> in cluster <MSUCluster> Exited
+
+Job <mpiexec -n 2 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:11:07 2024
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:11:07 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 03:11:07 2024
+Terminated at Thu Dec 26 03:11:10 2024
+Results reported at Thu Dec 26 03:11:10 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./a.out
+------------------------------------------------------------
+
+Exited with exit code 139.
+
+Resource usage summary:
+
+    CPU time :                                   0.71 sec.
+    Max Memory :                                 258 MB
+    Average Memory :                             173.33 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                21
+    Run time :                                   4 sec.
+    Turnaround time :                            3 sec.
+
+The output (if any) follows:
+
+0
+1
+2
+0
+1
+2
+[polus-c3-ib:25733] *** Process received signal ***
+[polus-c3-ib:25734] *** Process received signal ***
+[polus-c3-ib:25734] Signal: Segmentation fault (11)
+[polus-c3-ib:25734] Signal code: Address not mapped (1)
+[polus-c3-ib:25734] Failing at address: (nil)
+[polus-c3-ib:25733] Signal: Segmentation fault (11)
+[polus-c3-ib:25733] Signal code: Address not mapped (1)
+[polus-c3-ib:25733] Failing at address: 0x100000002
+[polus-c3-ib:25733] [ 0] [0x100000050478]
+[polus-c3-ib:25733] [ 1] ./a.out[0x1000daac]
+[polus-c3-ib:25733] [ 2] [0x0]
+[polus-c3-ib:25733] [ 3] [0x775f78657475665f]
+[polus-c3-ib:25733] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 1 with PID 0 on node polus-c3-ib exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297507: <mpiexec -n 2 ./a.out> in cluster <MSUCluster> Done
+
+Job <mpiexec -n 2 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:12:10 2024
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:12:11 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 03:12:11 2024
+Terminated at Thu Dec 26 03:13:35 2024
+Results reported at Thu Dec 26 03:13:35 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./a.out
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   166.81 sec.
+    Max Memory :                                 781 MB
+    Average Memory :                             561.36 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                21
+    Run time :                                   85 sec.
+    Turnaround time :                            85 sec.
+
+The output (if any) follows:
+
+0
+1
+2
+0
+1
+2
+165750 82.679949
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 16,295,375
+    454: data region reached 2 times
+        454: data copyin transfers: 24
+             device time(us): total=
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=1
+    time(us): 16,039,241
+    454: data region reached 2 times
+        454: data copyin transfers: 24
+             device time(us): total=153 max=14 min=5 avg=6
+        729: data copyout transfers: 24
+             device time(us): total=203 max=10 min=8 avg=8
+159 max=15 min=5 avg=6
+        729: data copyout transfers: 24
+             device time(us): total=197 max=11 min=8 avg=8
+    496: compute region reached 165750 times
+        496: kernel launched 165750 times
+            grid: [    496: compute region reached 165750 times
+        496: kernel launched 165750 times
+            grid: [114]  block: [128]
+             device time(us): total=764,749 max=10 min=4 avg=4
+            elapsed time(us): total=4,211,383 max=43,215 min=23 avg=25
+    562: compute region reached 165750 times
+        562: kernel launched 165750 times
+            grid: [114]  block: [128]
+             device time(us): total=331,576 max=4 min=2 avg=2
+            elapsed time(us): total=3,483,610 max=60 min=20 avg=21
+    581: update directive reached 663000 times
+        581: data copyout transfers: 663000
+             device time(us): total=4,678,229 max=126 min=6 avg=7
+    623: compute region reached 165750 times
+        623: kernel launched 165750 times
+            grid: [114]  block: [128]
+             device time(us): total=754,185 max=7 min=4 avg=4
+            elapsed time(us): total=4,058,271 max=664 min=23 avg=24
+    623: update directive reached 663000 times
+        623: data copyin transfers: 663000
+             device time(us): total=3,494,730 max=87 min=3 avg=5
+    696: compute region reached 165750 times
+        696: kernel launched 165750 times
+            grid: [114]  block: [128]
+             device time(us): total=497,302 max=5 min=3 avg=3
+115]  block: [128]
+             device time(us): total=829,031 max=9 min=5 avg=5
+            elapsed time(us): total=4,275,301 max=43,204 min=24 avg=25
+    562: compute region reached 165750 times
+        562: kernel launched 165750 times
+            grid: [115]  block: [128]
+             device time(us): total=331,629 max=5 min=2 avg=2
+            elapsed time(us): total=3,481,998 max=107 min=20 avg=21
+    581: update directive reached 663000 times
+        581: data copyout transfers: 663000
+             device time(us): total=4,706,758 max=85 min=5 avg=7
+    623: compute region reached 165750 times
+        623: kernel launched 165750 times
+            grid: [115]  block: [128]
+             device time(us): total=828,973 max=8 min=5 avg=5
+            elapsed time(us): total=4,122            elapsed time(us): total=3,691,345 max=774 min=21 avg=22
+        696: reduction kernel launched 165750 times
+            grid: [2]  block: [256]
+             device time(us): total=497,295 max=4 min=3 avg=3
+            elapsed time(us): total=3,561,465 max=56 min=20,280 max=142 min=24 avg=24
+    623: update directive reached 663000 times
+        623: data copyin transfers: 663000
+             device time(us): total=3,548,999 max=278 min=2 avg=5
+ avg=21
+    696: data region reached 331500 times
+        696: data copyin transfers: 165750
+             device time(us): total=664,470 max=32 min=2 avg=4
+        702: data copyout transfers: 165750
+             device time(us): total=1,162,966 max=83 min=5 avg=7
+    705: compute region reached 165750 times
+        705: kernel launched 165750 times
+            grid: [114    696: compute region reached 165750 times
+        696: kernel launched 165750 times
+            grid: [115]  block: [128]
+             device time(us): total=497,322 max=5 min=3 avg=3
+            elapsed time(us): total=3,690,345]  block: [128]
+             device time(us): total=497,339 max=5 min=3 avg=3
+            elapsed time(us): total=3,736,044 max=237 min=21 avg=22
+        705: reduction kernel launched 165750 times
+            grid: [2]  block: [256]
+             device time(us): total=497,291 max=4 min=3 avg=3
+            elapsed time(us): total=3,543,427 max=164 min=20 avg=21
+    705: data region reached 331500 times
+        705: data copyin transfers: 165750
+             device time(us): total=705,087 max=89 min=4 avg=4
+        711: data copyout transfers: 165750
+             device time(us): total=1,162,073 max=47 min=5 avg=7
+    717: compute region reached 165750 times
+        717: kernel launched 165750 times
+            grid: [114]  block: [128]
+             device time(us): total=331,593 max=4 min=2 avg=2
+            elapsed time(us): total=3,712,962 max=216 min=21 avg=22
+ max=792 min=21 avg=22
+        696: reduction kernel launched 165750 times
+            grid: [2]  block: [256]
+             device time(us): total=497,316 max=5 min=3 avg=3
+            elapsed time(us): total=3,563,994 max=106 min=20 avg=21
+    696: data region reached 331500 times
+        696: data copyin transfers: 165750
+             device time(us): total=664,556 max=12 min=2 avg=4
+        702: data copyout transfers: 165750
+             device time(us): total=1,182,580 max=16 min=5 avg=7
+    705: compute region reached 165750 times
+        705: kernel launched 165750 times
+            grid: [115]  block: [128]
+             device time(us): total=497,345 max=6 min=3 avg=3
+            elapsed time(us): total=3,731,328 max=91 min=21 avg=22
+        705: reduction kernel launched 165750 times
+            grid: [2]  block: [256]
+             device time(us): total=497,326 max=5 min=3 avg=3
+            elapsed time(us): total=3,542,707 max=157 min=20 avg=21
+    705: data region reached 331500 times
+        705: data copyin transfers: 165750
+             device time(us): total=717,779 max=19 min=4 avg=4
+        711: data copyout transfers: 165750
+             device time(us): total=1,163,795 max=35 min=5 avg=7
+    717: compute region reached 165750 times
+        717: kernel launched 165750 times
+            grid: [115]  block: [128]
+             device time(us): total=331,610 max=5 min=2 avg=2
+            elapsed time(us): total=3,722,104 max=461 min=21 avg=22
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297508: <mpiexec -n 2 ./a.out> in cluster <MSUCluster> Done
+
+Job <mpiexec -n 2 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:21:44 2024
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:21:45 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 03:21:45 2024
+Terminated at Thu Dec 26 03:24:00 2024
+Results reported at Thu Dec 26 03:24:00 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./a.out
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   268.06 sec.
+    Max Memory :                                 1175 MB
+    Average Memory :                             775.38 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                21
+    Run time :                                   135 sec.
+    Turnaround time :                            136 sec.
+
+The output (if any) follows:
+
+242436 132.653627
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 24,432,884
+    363: data region reached 2 times
+        363: data copyin transfers: 24
+             device time(us): total=211 max=16 min=6 avg=8
+        454: data copyout transfers: 24
+             device time(us): total=272 max=21 min=10 avg=11
+    368: compute region reached 1 time
+        368: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=206 max=206 min=206 avg=206
+    413: compute region reached 1 time
+        413: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=2 max=2 min=2 avg=2
+            elapsed time(us): total=30 max=30 min=30 avg=30
+    463: data region reached 2 times
+        463: data copyin transfers: 24
+             device time(us): total=189 max=11 min=6 avg=7
+        746: data copyout transfers: 24
+             device time(us): total=172 max=9 min=7 avg=7
+    467: compute region reached 242436 times
+        467: kernel launched 242436 times
+            grid: [2]  block: [128]
+             device time(us): total=484,985 max=4 min=2 avg=2
+            elapsed time(us): total=5,094,456 max=300 min=19 avg=21
+    509: compute region reached 242436 times
+        509: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=1,062,946 max=8 min=4 avg=4
+            elapsed time(us): total=5,895,988 max=63 min=23 avg=24
+    575: compute region reached 242436 times
+        575: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=485,016 max=4 min=2 avg=2
+            elapsed time(us): total=5,107,277 max=297 min=20 avg=21
+    594: update directive reached 969744 times
+        594: data copyout transfers: 969744
+             device time(us): total=6,902,662 max=654 min=5 avg=7
+    597: compute region reached 242436 times
+        597: kernel launched 242436 times
+            grid: [2]  block: [128]
+             device time(us): total=484,987 max=4 min=2 avg=2
+            elapsed time(us): total=5,195,573 max=485 min=20 avg=21
+    640: compute region reached 242436 times
+        640: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=1,060,470 max=8 min=4 avg=4
+            elapsed time(us): total=5,967,417 max=43,111 min=23 avg=24
+    640: update directive reached 969744 times
+        640: data copyin transfers: 969744
+             device time(us): total=5,128,406 max=46 min=3 avg=5
+    713: compute region reached 242436 times
+        713: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=727,433 max=6 min=3 avg=3
+            elapsed time(us): total=5,433,585 max=142 min=21 avg=22
+        713: reduction kernel launched 242436 times
+            grid: [2]  block: [256]
+             device time(us): total=727,428 max=5 min=3 avg=3
+            elapsed time(us): total=5,264,122 max=332 min=20 avg=21
+    713: data region reached 484872 times
+        713: data copyin transfers: 242436
+             device time(us): total=972,048 max=12
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=1
+ min=2 avg=4
+        719: data copyout transfers: 242436
+             device time(us): total=1,745,128 max=46 min=5 avg=7
+    722: compute region reached 242436 times
+        722: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us):    time(us): 24,560,785
+    363: data region reached 2 times
+        363: data copyin transfers: 24
+             device time(us): total=204 max=25 min=6 avg=8
+        454: data copyout transfers: 24
+             device time(us): total=727,453 max=6 min=3 avg=3
+            elapsed time(us): total=5,450,964 max=49 min=21 avg=22
+        722: reduction kernel launched 242436 times
+            grid: [2]  block: [256]
+ total=266 max=21 min=10 avg=11
+    377: compute region reached 1 time
+        377: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us):             device time(us): total=727,434 max=5 min=3 avg=3
+            elapsed time(us): total=5,247,995 max=275 min=20 avg=21
+    722: data region reached 484872 times
+        722: data copyin transfers: 242436
+             device time(us): total=1,001,960 max=298 min=4 avg=4
+        728: data copyout transfers: 242436
+             device time(us): total=1,708,658 max=20 min=4 avg=7
+    734: compute region reached 242436 times
+        734: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=485,021 max=5 min=2 avg=2
+            elapsed time(us): total=5,460,223 max=136 min=21 avg=22
+ total=206 max=206 min=206 avg=206
+    422: compute region reached 1 time
+        422: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=2 max=2 min=2 avg=2
+            elapsed time(us): total=30 max=30 min=30 avg=30
+    463: data region reached 2 times
+        463: data copyin transfers: 24
+             device time(us): total=197 max=14 min=6 avg=8
+        746: data copyout transfers: 24
+             device time(us): total=181 max=10 min=7 avg=7
+    478: compute region reached 242436 times
+        478: kernel launched 242436 times
+            grid: [2]  block: [128]
+             device time(us): total=484,916 max=4 min=2 avg=2
+            elapsed time(us): total=5,058,463 max=797 min=20 avg=20
+    509: compute region reached 242436 times
+        509: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=1,215,118 max=8 min=5 avg=5
+            elapsed time(us): total=6,044,419 max=66 min=24 avg=24
+    575: compute region reached 242436 times
+        575: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=484,988 max=4 min=2 avg=2
+            elapsed time(us): total=5,194,333 max=295 min=20 avg=21
+    594: update directive reached 969744 times
+        594: data copyout transfers: 969744
+             device time(us): total=6,823,842 max=126 min=5 avg=7
+    608: compute region reached 242436 times
+        608: kernel launched 242436 times
+            grid: [2]  block: [128]
+             device time(us): total=484,926 max=3 min=2 avg=2
+            elapsed time(us): total=5,192,440 max=449 min=20 avg=21
+    640: compute region reached 242436 times
+        640: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=1,213,069 max=7 min=5 avg=5
+            elapsed time(us): total=6,127,796 max=43,122 min=24 avg=25
+    640: update directive reached 969744 times
+        640: data copyin transfers: 969744
+             device time(us): total=5,067,781 max=580 min=3 avg=5
+    713: compute region reached 242436 times
+        713: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=727,428 max=5 min=3 avg=3
+            elapsed time(us): total=5,427,895 max=160 min=21 avg=22
+        713: reduction kernel launched 242436 times
+            grid: [2]  block: [256]
+             device time(us): total=727,365 max=4 min=3 avg=3
+            elapsed time(us): total=5,243,392 max=626 min=20 avg=21
+    713: data region reached 484872 times
+        713: data copyin transfers: 242436
+             device time(us): total=972,287 max=55 min=2 avg=4
+        719: data copyout transfers: 242436
+             device time(us): total=1,703,721 max=28 min=5 avg=7
+    722: compute region reached 242436 times
+        722: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=727,417 max=5 min=3 avg=3
+            elapsed time(us): total=5,501,402 max=57 min=22 avg=22
+        722: reduction kernel launched 242436 times
+            grid: [2]  block: [256]
+             device time(us): total=727,371 max=4 min=3 avg=3
+            elapsed time(us): total=5,213,436 max=286 min=20 avg=21
+    722: data region reached 484872 times
+        722: data copyin transfers: 242436
+             device time(us): total=1,014,384 max=18 min=4 avg=4
+        728: data copyout transfers: 242436
+             device time(us): total=1,700,312 max=87 min=5 avg=7
+    734: compute region reached 242436 times
+        734: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=485,007 max=4 min=2 avg=2
+            elapsed time(us): total=5,495,296 max=149 min=21 avg=22
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297509: <mpiexec -n 2 ./a.out> in cluster <MSUCluster> Done
+
+Job <mpiexec -n 2 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:45:58 2024
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 03:45:59 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 03:45:59 2024
+Terminated at Thu Dec 26 03:48:13 2024
+Results reported at Thu Dec 26 03:48:13 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./a.out
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   268.05 sec.
+    Max Memory :                                 1175 MB
+    Average Memory :                             774.62 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                21
+    Run time :                                   136 sec.
+    Turnaround time :                            135 sec.
+
+The output (if any) follows:
+
+242436 132.584095
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=1
+    time(us): 24,509,240
+    363: data region reached 2 times
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 24,234,608
+        363: data copyin transfers: 24
+             device time(us): total=214 max=17 min=7 avg=8
+        454: data copyout transfers: 24
+             device time(us): total=268 max=21 min=10 avg=11
+    377: compute region reached 1 time
+        377: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=193 max=193 min=193 avg=193
+    422: compute region reached 1 time
+        422: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=2 max=2 min=2 avg=2
+            elapsed time(us): total=29 max=29 min=29 avg=29
+    463: data region reached 2 times
+        463: data copyin transfers: 24
+             device time(us): total=198 max=14 min=6 avg=8
+        747: data copyout transfers: 24
+             device time(us): total=181 max=10 min=7 avg=7
+    478: compute region reached 242436 times
+        478: kernel launched 242436 times
+            grid: [2]  block: [128]
+    363: data region reached 2 times
+        363: data copyin transfers: 24
+             device time(us): total=213 max=26 min=7 avg=8
+        454: data copyout transfers: 24
+             device time(us): total=270 max=21 min=10 avg=11
+    368: compute region reached 1 time
+        368: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=204 max=204 min=204 avg=204
+    413: compute region reached 1 time
+        413: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=2 max=2 min=2 avg=2
+            elapsed time(us): total=29 max=29 min=29 avg=29
+    463: data region reached 2 times
+        463: data copyin transfers: 24
+             device time(us): total=185 max=12 min=6 avg=7
+        747: data copyout transfers: 24
+             device time(us): total=170 max=9 min=7 avg=7
+    467: compute region reached 242436 times
+        467: kernel launched 242436 times
+            grid: [2]  block: [128]
+             device time(us): total=484,980 max=4 min=2 avg=2
+            elapsed time(us): total=5,036             device time(us): total=484,917 max=4 min=2 avg=2
+            elapsed time(us): total=5,091,348 max=291 min=19 avg=21
+    509: compute region reached 242436 times
+,553 max=301 min=19 avg=20
+    509: compute region reached 242436 times
+        509: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=1,068,435 max=8 min=4 avg=4
+            elapsed time(us): total=5,870,031 max=105 min=23        509: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=1,215,387 max=8 min=5 avg=5
+            elapsed time(us): total=6,057 avg=24
+    575: compute region reached 242436 times
+        575: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=485,010 max=4 min=2 avg=2
+            elapsed time(us): total=5,065,907 max=291 min=20 avg=20
+    594: update directive reached 969744 times
+,870 max=54 min=24 avg=24
+    575: compute region reached 242436 times
+        575: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=484,985 max=4 min=2 avg=        594: data copyout transfers: 969744
+             device time(us): total=6,842,861 max=88 min=5 avg=7
+    597: compute region reached 242436 times
+        597: kernel launched 242436 times
+            grid: [2]  block: [128]
+             device time(us): total=484,985 max=4 min=2 avg=2
+            elapsed time(us): total=5,1252
+            elapsed time(us): total=5,160,984 max=287 min=20 avg=21
+    594: update directive reached 969744 times
+        594: data copyout transfers: 969744
+             device time(us): total=6,824,997 max=657 min=6 avg=7
+    608: compute region reached 242436 times
+        608: kernel launched 242436 times
+            grid: [2]  block: [128]
+             device time(us): total=484,937 max=4 min=2 avg=2
+            elapsed time(us): total=5,204,270 max=77 min=20 avg=21
+    640: compute region reached 242436 times
+        640: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=1,213,068 max=7 min=5 avg=5
+            elapsed time(us): total=6,130,156 max=43,096 min=24 avg=25
+    640: update directive reached 969744 times
+        640: data copyin transfers: 969744
+             device time(us): total=5,031,666 max=25 min=3 avg=5
+    713: compute region reached 242436 times
+        713: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=727,422 max=5 min=3 avg=3
+            elapsed time(us): total=5,456,664 max=505 min=21 avg=22
+        713: reduction kernel launched 242436 times
+            grid: [2]  block: [256]
+             device time(us): total=727,386 max=5 min=3 avg=3
+            elapsed time(us): total=5,253,054 max=289 min=20 avg=21
+    713: data region reached 484872 times
+        713: data copyin transfers: 242436
+             device time(us): total=972,084 max=41 min=2 avg=4
+        719: data copyout transfers: 242436
+             device time(us): total=1,703,200 max=323 min=5 avg=7
+    722: compute region reached 242436 times
+        722: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=727,435 max=8 min=3 avg=3
+            elapsed time(us): total=5,487,832 max=901 min=22 avg=22
+        722: reduction kernel launched 242436 times
+            grid: [2]  block: [256]
+             device time(us): total=727,377 max=4 min=3 avg=3
+            elapsed time(us): total=5,243,046 max=192 min=20 avg=21
+    722: data region reached 484872 times
+        722: data copyin transfers: 242436
+             device time(us): total=,139 max=175 min=19 avg=21
+    640: compute region reached 242436 times
+        640: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=1,056,624 max=8 min=4 avg=4
+            elapsed time(us): total=5,905,133 max=43,075 min=23 avg=24
+    640: update directive reached 969744 times
+        640: data copyin transfers: 969744
+             device time(us): total=5,032,504 max=45 min=3 avg=5
+    713: compute region reached 242436 times
+        713: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=727,445 max=5 min=3 avg=3
+            elapsed time(us): total=5,400,707 max=494 min=21 avg=22
+        713: reduction kernel launched 242436 times
+            grid: [2]  block: [256]
+             device time(us): total=727,415 max=5 min=3 avg=3
+            elapsed time(us): total=5,209,842 max=282 min=20 avg=21
+    713: data region reached 484872 times
+        713: data copyin transfers: 242436
+             device time(us): total=971,953 max=37 min=2 avg=4
+        719: data copyout transfers: 242436
+             device time(us): total=1,715,192 max=27 min=5 avg=7
+    722: compute region reached 242436 times
+        722: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=727,447 max=6 min=3 avg=3
+            elapsed time(us): total=5,429,547 max=713 min=21 avg=22
+        722: reduction kernel launched 242436 times
+            grid: [2]  block: [256]
+             device time(us): total=727,424 max=5 min=3 avg=3
+            elapsed time(us): total=5,223,796 max=310 min=20 avg=21
+    722: data region reached 484872 times
+        722: data copyin transfers: 242436
+             device time(us): total=996,617 max=13 min=4 avg=4
+        728: data copyout transfers: 242436
+             device time(us): total=1,699,852 max=19 min=5 avg=7
+    735: compute region reached 242436 times
+        735: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=485,021 max=5 min=2 avg=2
+            elapsed time(us): total=5,444,623 max=164 min=21 avg=22
+999,027 max=14 min=4 avg=4
+        728: data copyout transfers: 242436
+             device time(us): total=1,699,524 max=15 min=5 avg=7
+    735: compute region reached 242436 times
+        735: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=484,962 max=4 min=2 avg=2
+            elapsed time(us): total=5,490,339 max=157 min=21 avg=22
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297512: <mpiexec -n 2 ./a.out> in cluster <MSUCluster> Exited
+
+Job <mpiexec -n 2 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 04:19:26 2024
+Job was executed on host(s) <2*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 04:19:26 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 04:19:26 2024
+Terminated at Thu Dec 26 04:19:38 2024
+Results reported at Thu Dec 26 04:19:38 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./a.out
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   23.76 sec.
+    Max Memory :                                 167 MB
+    Average Memory :                             125.50 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                15
+    Run time :                                   18 sec.
+    Turnaround time :                            12 sec.
+
+The output (if any) follows:
+
+mpiexec: Forwarding signal 18 to job
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297513: <mpiexec -n 2 ./a.out> in cluster <MSUCluster> Done
+
+Job <mpiexec -n 2 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 04:19:49 2024
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 04:19:49 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 04:19:49 2024
+Terminated at Thu Dec 26 04:22:04 2024
+Results reported at Thu Dec 26 04:22:04 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./a.out
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   269.41 sec.
+    Max Memory :                                 1172 MB
+    Average Memory :                             772.14 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                21
+    Run time :                                   141 sec.
+    Turnaround time :                            135 sec.
+
+The output (if any) follows:
+
+242436 133.371532
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=1
+    time(us): 24,904,888
+    363: data region reached 2 times
+        363: data copyin transfers: 24
+             device time(us): total=153 max=13 min=5 avg=6
+        454: data copyout transfers: 24
+             device time(us): total=211 max=14 min=8 avg=8
+    368: compute region reached 1 time
+        368: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us): total=116 max=116 min=116 avg=116
+    413: compute region reached 1 time
+        413: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=2 max=2 min=2 avg=2
+            elapsed time(us): total=28 max=28 min=28 avg=28
+    463: data region reached 2 times
+        463: data copyin transfers: 28
+             device time(us): total=162 max=9 min=4 avg=5
+        747: data copyout transfers: 28
+             device time(us): total=216 max=10 min=6 avg=7
+    467: compute region reached 242436 times
+        467: kernel launched 242436 times
+            grid: [2]  block: [128]
+             device time(us): total=484,923 max=3 min=2 avg=2
+            elapsed time(us): total=5,086,234 max=176 min=19 avg=20
+    509: compute region reached 242436 times
+        509: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=1,302,342 max=9 min=5 avg=5
+            elapsed time(us): total=6,112,698 max=63 min=24 avg=25
+    575: compute region reached 242436 times
+        575: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=727,418 max=5 min=3 avg=3
+            elapsed time(us): total=5,289,099 max=353 min=21 avg=21
+    594: update directive reached 969744 times
+        594: data copyout transfers: 969744
+             device time(us): total=6,825,052 max=625 min=5 avg=7
+    597: compute region reached 242436 times
+        597: kernel launched 242436 times
+            grid: [2]  block: [128]
+             device time(us): total=484,929 max=4 min=2 avg=2
+            elapsed time(us): total=5,220,521 max=58 min=20 avg=21
+    640: compute region reached 242436 times
+        640: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=1,294,103 max=8 min=5 avg=5
+            elapsed time(us): total=6,169,867 max=43,319 min=24 avg=25
+    640: update directive reached 969744 times
+        640: data copyin transfers: 969744
+             device time(us): total=5,014,580 max=88 min=3 avg=5
+    713: compute region reached 242436 times
+        713: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=727,412 max=5 min=3 avg=3
+            elapsed time(us): total=5,432,604 max=61 min=21 avg=22
+        713: reduction kernel launched 242436 times
+            grid: [2]  block: [
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=0
+256]
+             device time(us): total=727,369 max=4 min=3 avg=3
+            elapsed time(us): total=5,256,889 max=292 min=20 avg=21
+    713: data region reached 484872 times
+        713: data copyin transfers: 242436
+    time(us): 25,520,658
+    363: data region reached 2 times
+        363: data copyin transfers: 24
+             device time(us): total=158 max=15 min=5 avg=6
+        454: data copyout transfers: 24
+             device time(us): total=             device time(us): total=972,428 max=14 min=2 avg=4
+        719: data copyout transfers: 242436
+             device time(us): total=1,700,993 max=43 min=5 avg=7
+    722: compute region reached 242436 times
+        722: kernel launched 242436 times
+            grid: [201 max=15 min=8 avg=8
+    377: compute region reached 1 time
+        377: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=3 max=3 min=3 avg=3
+            elapsed time(us):114]  block: [128]
+             device time(us): total=727,438 max=5 min=3 avg=3
+            elapsed time(us): total=5,487,790 max=99 min=22 avg=22
+        722: reduction kernel launched 242436 times
+            grid: [2]  block: [256]
+             device time(us): total=727,375 max=5 min=3 avg=3
+            elapsed time(us): total=5,245,470 max=169 min=20 avg=21
+    722: data region reached 484872 times
+        722: data copyin transfers: 242436
+             device time(us): total=1,002,935 max=17 min=4 avg=4
+        728: data copyout transfers: 242436
+             device time(us): total=1,699,877 max=86 min=5 avg=7
+    735: compute region reached 242436 times
+        735: kernel launched 242436 times
+            grid: [114]  block: [128]
+             device time(us): total=484,967 max=4 min=2 avg=2
+            elapsed time(us): total=5,480,425 max=322 min=21 avg=22
+ total=138 max=138 min=138 avg=138
+    422: compute region reached 1 time
+        422: kernel launched 1 time
+            grid: [2]  block: [128]
+             device time(us): total=2 max=2 min=2 avg=2
+            elapsed time(us): total=30 max=30 min=30 avg=30
+    463: data region reached 2 times
+        463: data copyin transfers: 28
+             device time(us): total=162 max=9 min=4 avg=5
+        747: data copyout transfers: 28
+             device time(us): total=211 max=11 min=7 avg=7
+    478: compute region reached 242436 times
+        478: kernel launched 242436 times
+            grid: [2]  block: [128]
+             device time(us): total=484,972 max=4 min=2 avg=2
+            elapsed time(us): total=5,076,554 max=181 min=19 avg=20
+    509: compute region reached 242436 times
+        509: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=1,454,795 max=9 min=6 avg=6
+            elapsed time(us): total=6,269,539 max=67 min=25 avg=25
+    575: compute region reached 242436 times
+        575: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=727,430 max=5 min=3 avg=3
+            elapsed time(us): total=5,324,739 max=204 min=21 avg=21
+    594: update directive reached 969744 times
+        594: data copyout transfers: 969744
+             device time(us): total=6,901,737 max=47 min=5 avg=7
+    608: compute region reached 242436 times
+        608: kernel launched 242436 times
+            grid: [2]  block: [128]
+             device time(us): total=485,001 max=4 min=2 avg=2
+            elapsed time(us): total=5,185,065 max=53 min=20 avg=21
+    640: compute region reached 242436 times
+        640: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=1,454,810 max=9 min=6 avg=6
+            elapsed time(us): total=6,319,686 max=43,313 min=24 avg=26
+    640: update directive reached 969744 times
+        640: data copyin transfers: 969744
+             device time(us): total=5,195,806 max=22 min=3 avg=5
+    713: compute region reached 242436 times
+        713: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=727,439 max=5 min=3 avg=3
+            elapsed time(us): total=5,422,474 max=575 min=21 avg=22
+        713: reduction kernel launched 242436 times
+            grid: [2]  block: [256]
+             device time(us): total=727,417 max=5 min=3 avg=3
+            elapsed time(us): total=5,241,396 max=297 min=20 avg=21
+    713: data region reached 484872 times
+        713: data copyin transfers: 242436
+             device time(us): total=972,581 max=28 min=2 avg=4
+        719: data copyout transfers: 242436
+             device time(us): total=1,724,109 max=51 min=5 avg=7
+    722: compute region reached 242436 times
+        722: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=727,438 max=6 min=3 avg=3
+            elapsed time(us): total=5,453,807 max=77 min=21 avg=22
+        722: reduction kernel launched 242436 times
+            grid: [2]  block: [256]
+             device time(us): total=727,396 max=5 min=3 avg=3
+            elapsed time(us): total=5,244,093 max=318 min=20 avg=21
+    722: data region reached 484872 times
+        722: data copyin transfers: 242436
+             device time(us): total=1,019,511 max=443 min=4 avg=4
+        728: data copyout transfers: 242436
+             device time(us): total=1,704,474 max=40 min=5 avg=7
+    735: compute region reached 242436 times
+        735: kernel launched 242436 times
+            grid: [115]  block: [128]
+             device time(us): total=485,005 max=5 min=2 avg=2
+            elapsed time(us): total=5,477,271 max=182 min=21 avg=22

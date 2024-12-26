@@ -1,0 +1,106 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297528: <mpiexec -n 1 ./a.out> in cluster <MSUCluster> Done
+
+Job <mpiexec -n 1 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 05:44:32 2024
+Job was executed on host(s) <polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 05:44:33 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 05:44:33 2024
+Terminated at Thu Dec 26 05:44:47 2024
+Results reported at Thu Dec 26 05:44:47 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 1 ./a.out
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   13.29 sec.
+    Max Memory :                                 187 MB
+    Average Memory :                             140.50 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                15
+    Run time :                                   17 sec.
+    Turnaround time :                            15 sec.
+
+The output (if any) follows:
+
+22784 12.908072
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/gpu.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 3,461,270
+    460: data region reached 2 times
+        460: data copyin transfers: 37
+             device time(us): total=199 max=14 min=3 avg=5
+        733: data copyout transfers: 37
+             device time(us): total=297 max=10 min=7 avg=8
+    460: compute region reached 22784 times
+        460: kernel launched 22784 times
+            grid: [4]  block: [128]
+             device time(us): total=91,214 max=10 min=4 avg=4
+            elapsed time(us): total=483,365 max=476 min=20 avg=21
+    545: update directive reached 91136 times
+        545: data copyout transfers: 91136
+             device time(us): total=638,652 max=14 min=5 avg=7
+    574: compute region reached 22784 times
+        574: kernel launched 22784 times
+            grid: [4]  block: [128]
+             device time(us): total=91,175 max=7 min=4 avg=4
+            elapsed time(us): total=476,934 max=242 min=20 avg=20
+    574: update directive reached 91136 times
+        574: data copyin transfers: 91136
+             device time(us): total=463,848 max=13 min=4 avg=5
+    647: compute region reached 22784 times
+        647: kernel launched 22784 times
+            grid: [4]  block: [128]
+             device time(us): total=68,359 max=5 min=3 avg=3
+            elapsed time(us): total=485,956 max=36,840 min=18 avg=21
+        647: reduction kernel launched 22784 times
+            grid: [2]  block: [256]
+             device time(us): total=45,599 max=5 min=2 avg=2
+            elapsed time(us): total=424,198 max=157 min=17 avg=18
+    647: data region reached 45568 times
+        647: data copyin transfers: 22784
+             device time(us): total=91,342 max=42 min=2 avg=4
+        653: data copyout transfers: 22784
+             device time(us): total=160,024 max=32 min=5 avg=7
+    656: compute region reached 22784 times
+        656: kernel launched 22784 times
+            grid: [4]  block: [128]
+             device time(us): total=68,367 max=5 min=3 avg=3
+            elapsed time(us): total=452,572 max=651 min=18 avg=19
+        656: reduction kernel launched 22784 times
+            grid: [2]  block: [256]
+             device time(us): total=45,587 max=4 min=2 avg=2
+            elapsed time(us): total=423,846 max=252 min=17 avg=18
+    656: data region reached 45568 times
+        656: data copyin transfers: 22784
+             device time(us): total=91,670 max=12 min=4 avg=4
+        662: data copyout transfers: 22784
+             device time(us): total=159,760 max=19 min=5 avg=7
+    670: compute region reached 22784 times
+        670: kernel launched 22784 times
+            grid: [4]  block: [128]
+             device time(us): total=45,770 max=5 min=2 avg=2
+            elapsed time(us): total=433,409 max=199 min=18 avg=19
+    670: data region reached 45568 times
+        670: data copyin transfers: 22784
+             device time(us): total=132,374 max=14 min=5 avg=5
+        691: data copyout transfers: 22784
+             device time(us): total=159,751 max=48 min=6 avg=7
+    698: update directive reached 91136 times
+        698: data copyout transfers: 91136
+             device time(us): total=638,697 max=14 min=6 avg=7
+    731: update directive reached 91136 times
+        731: data copyin transfers: 91136
+             device time(us): total=468,585 max=10 min=3 avg=5

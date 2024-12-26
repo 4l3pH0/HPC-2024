@@ -1,0 +1,91 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1282914: <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel24-619-15 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 1;#BSUB -W 00:30;#BSUB -o 8090-1.txt;#BSUB -e 8090.%J.err;OMP_NUM_THREADS=1 mpiexec ./8090> in cluster <MSUCluster> Done
+
+Job <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel24-619-15 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 1;#BSUB -W 00:30;#BSUB -o 8090-1.txt;#BSUB -e 8090.%J.err;OMP_NUM_THREADS=1 mpiexec ./8090> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Tue Dec 17 18:00:34 2024
+Job was executed on host(s) <polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Tue Dec 17 18:00:34 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/mpi/isit/fin> was used as the working directory.
+Started at Tue Dec 17 18:00:34 2024
+Terminated at Tue Dec 17 18:21:03 2024
+Results reported at Tue Dec 17 18:21:03 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel24-619-15 #
+source /polusfs/setenv/setup.SMPI
+#BSUB -n 1
+#BSUB -W 00:30
+#BSUB -o 8090-1.txt
+#BSUB -e 8090.%J.err
+OMP_NUM_THREADS=1 mpiexec ./8090
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1228.15 sec.
+    Max Memory :                                 70 MB
+    Average Memory :                             69.58 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                12
+    Run time :                                   1234 sec.
+    Turnaround time :                            1229 sec.
+
+The output (if any) follows:
+
+2109968 1228.370060
+
+
+PS:
+
+Read file <8090.1282914.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1283253: <mpiexec ./8090> in cluster <MSUCluster> Done
+
+Job <mpiexec ./8090> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Tue Dec 17 21:41:22 2024
+Job was executed on host(s) <polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <normal>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Tue Dec 17 21:41:22 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/mpi/isit/fin> was used as the working directory.
+Started at Tue Dec 17 21:41:22 2024
+Terminated at Tue Dec 17 22:01:59 2024
+Results reported at Tue Dec 17 22:01:59 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec ./8090
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1237.59 sec.
+    Max Memory :                                 70 MB
+    Average Memory :                             69.60 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                11
+    Run time :                                   1243 sec.
+    Turnaround time :                            1237 sec.
+
+The output (if any) follows:
+
+2196576 1236.829508
+
+
+PS:
+
+Read file <8090-1-err.txt> for stderr output of this job.
+

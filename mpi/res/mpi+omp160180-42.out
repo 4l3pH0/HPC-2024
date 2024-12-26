@@ -1,0 +1,93 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1285155: <OMP_NUM_THREADS=2 mpiexec ./mpi+omp160180> in cluster <MSUCluster> Exited
+
+Job <OMP_NUM_THREADS=2 mpiexec ./mpi+omp160180> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Wed Dec 18 20:32:10 2024
+Job was executed on host(s) <4*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <normal>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Wed Dec 18 20:32:10 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/mpi/isit/fin> was used as the working directory.
+Started at Wed Dec 18 20:32:10 2024
+Terminated at Wed Dec 18 20:34:18 2024
+Results reported at Wed Dec 18 20:34:18 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+OMP_NUM_THREADS=2 mpiexec ./mpi+omp160180
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   520.00 sec.
+    Max Memory :                                 228 MB
+    Average Memory :                             194.83 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              7
+    Max Threads :                                24
+    Run time :                                   133 sec.
+    Turnaround time :                            128 sec.
+
+The output (if any) follows:
+
+OpenMP is supported!
+OpenMP is supported!
+OpenMP is supported!
+OpenMP is supported!
+
+
+PS:
+
+Read file <mpi+omp160180-42.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1285167: <OMP_NUM_THREADS=2 mpiexec ./mpi+omp160180> in cluster <MSUCluster> Done
+
+Job <OMP_NUM_THREADS=2 mpiexec ./mpi+omp160180> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Wed Dec 18 20:34:43 2024
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <normal>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Wed Dec 18 20:38:05 2024
+                            <2*polus-c4-ib.bmc.hpc.cs.msu.ru>
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/mpi/isit/fin> was used as the working directory.
+Started at Wed Dec 18 20:38:05 2024
+Terminated at Wed Dec 18 20:41:01 2024
+Results reported at Wed Dec 18 20:41:01 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+OMP_NUM_THREADS=2 mpiexec ./mpi+omp160180
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1870.41 sec.
+    Max Memory :                                 244 MB
+    Average Memory :                             198.04 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              8
+    Max Threads :                                32
+    Run time :                                   176 sec.
+    Turnaround time :                            378 sec.
+
+The output (if any) follows:
+
+OpenMP is supported!
+OpenMP is supported!
+OpenMP is supported!
+OpenMP is supported!
+377170 175.196268
+
+
+PS:
+
+Read file <mpi+omp160180-42.err> for stderr output of this job.
+

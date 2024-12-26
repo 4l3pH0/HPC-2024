@@ -1,0 +1,50 @@
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1285890: <OMP_NUM_THREADS=8 mpiexec ./mpi+omp160180> in cluster <MSUCluster> Exited
+
+Job <OMP_NUM_THREADS=8 mpiexec ./mpi+omp160180> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 19 01:21:39 2024
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <normal>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 19 04:02:24 2024
+                            <2*polus-c4-ib.bmc.hpc.cs.msu.ru>
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/mpi/isit/fin> was used as the working directory.
+Started at Thu Dec 19 04:02:24 2024
+Terminated at Thu Dec 19 07:02:26 2024
+Results reported at Thu Dec 19 07:02:26 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+OMP_NUM_THREADS=8 mpiexec ./mpi+omp160180
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   174402.00 sec.
+    Max Memory :                                 245 MB
+    Average Memory :                             244.17 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              8
+    Max Threads :                                44
+    Run time :                                   10802 sec.
+    Turnaround time :                            20447 sec.
+
+The output (if any) follows:
+
+OpenMP is supported!
+OpenMP is supported!
+OpenMP is supported!
+OpenMP is supported!
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 1 with PID 0 on node polus-c3-ib exited on signal 12 (User defined signal 2).
+--------------------------------------------------------------------------
+
+
+PS:
+
+Read file <true-mpi+omp160180-48.err> for stderr output of this job.
+

@@ -1,0 +1,275 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297446: <mpiexec -n 1 ./a.out> in cluster <MSUCluster> Exited
+
+Job <mpiexec -n 1 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 00:48:31 2024
+Job was executed on host(s) <polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 00:49:47 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 00:49:47 2024
+Terminated at Thu Dec 26 00:49:51 2024
+Results reported at Thu Dec 26 00:49:51 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 1 ./a.out
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.35 sec.
+    Max Memory :                                 23 MB
+    Average Memory :                             16.67 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   4 sec.
+    Turnaround time :                            80 sec.
+
+The output (if any) follows:
+
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/mpi+omp.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 37
+    406: compute region reached 1 time
+        406: kernel launched 1 time
+            grid: [4]  block: [128]
+             device time(us): total=0 max=0 min=0 avg=0
+    406: data region reached 2 times
+        406: data copyin transfers: 4
+             device time(us): total=37 max=17 min=5 avg=9
+call to cuMemFreeHost returned error 700: Illegal address during kernel execution
+
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[51664,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297447: <mpiexec -n 1 ./a.out> in cluster <MSUCluster> Done
+
+Job <mpiexec -n 1 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 00:53:41 2024
+Job was executed on host(s) <polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 00:53:41 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 00:53:41 2024
+Terminated at Thu Dec 26 00:53:42 2024
+Results reported at Thu Dec 26 00:53:42 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 1 ./a.out
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.39 sec.
+    Max Memory :                                 5 MB
+    Average Memory :                             5.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                3
+    Run time :                                   5 sec.
+    Turnaround time :                            1 sec.
+
+The output (if any) follows:
+
+prejob done
+1
+2
+3
+4
+5
+6
+1 0.001271
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/mpi+omp.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 981
+    464: data region reached 2 times
+        464: data copyin transfers: 24
+             device time(us): total=134 max=15 min=5 avg=5
+        508: data copyout transfers: 24
+             device time(us): total=201 max=15 min=8 avg=8
+    514: data region reached 2 times
+        514: data copyin transfers: 24
+             device time(us): total=121 max=6 min=5 avg=5
+        558: data copyout transfers: 24
+             device time(us): total=168 max=7 min=7 avg=7
+    568: data region reached 2 times
+        568: data copyin transfers: 24
+             device time(us): total=122 max=6 min=5 avg=5
+        857: data copyout transfers: 24
+             device time(us): total=169 max=8 min=7 avg=7
+    616: compute region reached 1 time
+        616: kernel launched 1 time
+            grid: [4]  block: [128]
+             device time(us): total=8 max=8 min=8 avg=8
+            elapsed time(us): total=134 max=134 min=134 avg=134
+    682: compute region reached 1 time
+        682: kernel launched 1 time
+            grid: [4]  block: [128]
+             device time(us): total=2 max=2 min=2 avg=2
+            elapsed time(us): total=21 max=21 min=21 avg=21
+    701: update directive reached 4 times
+        701: data copyout transfers: 4
+             device time(us): total=29 max=8 min=7 avg=7
+    757: compute region reached 1 time
+        757: kernel launched 1 time
+            grid: [4]  block: [128]
+             device time(us): total=6 max=6 min=6 avg=6
+            elapsed time(us): total=25 max=25 min=25 avg=25
+    757: update directive reached 4 times
+        757: data copyin transfers: 4
+             device time(us): total=21 max=6 min=5 avg=5
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297473: <mpiexec -n 1 ./a.out> in cluster <MSUCluster> Done
+
+Job <mpiexec -n 1 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 00:58:46 2024
+Job was executed on host(s) <polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 00:59:37 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 00:59:37 2024
+Terminated at Thu Dec 26 00:59:49 2024
+Results reported at Thu Dec 26 00:59:49 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 1 ./a.out
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   11.01 sec.
+    Max Memory :                                 192 MB
+    Average Memory :                             144.25 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                15
+    Run time :                                   12 sec.
+    Turnaround time :                            63 sec.
+
+The output (if any) follows:
+
+0.250000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.208333 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.083333 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.416667 -0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.250000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.083333 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.833333 -0.000000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.250000 0.000000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.083333 0.000000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.833333 -0.000000 0.000000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.250000 0.000000 0.000000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.083333 0.000000 0.000000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.416667 -0.000000 0.000000 0.000000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.250000 0.000000 0.000000 0.000000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.083333 0.000000 0.000000 0.000000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.416667 -0.000000 0.000000 0.000000 0.000000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.250000 0.000000 0.000000 0.000000 0.000000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.083333 0.000000 0.000000 0.000000 0.000000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.416667 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.250000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+0.500000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.083333 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+0.250000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.500000 0.458333 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+22784 10.540380
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/mpi+omp.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 2,078,639
+    372: data region reached 2 times
+        372: data copyin transfers: 24
+             device time(us): total=141 max=15 min=5 avg=5
+        416: data copyout transfers: 24
+             device time(us): total=200 max=15 min=8 avg=8
+    421: data region reached 2 times
+        421: data copyin transfers: 24
+             device time(us): total=124 max=6 min=5 avg=5
+        465: data copyout transfers: 24
+             device time(us): total=169 max=8 min=7 avg=7
+    481: data region reached 2 times
+        481: data copyin transfers: 24
+             device time(us): total=123 max=7 min=5 avg=5
+        764: data copyout transfers: 24
+             device time(us): total=166 max=7 min=6 avg=6
+    527: compute region reached 22784 times
+        527: kernel launched 22784 times
+            grid: [4]  block: [128]
+             device time(us): total=68,399 max=8 min=3 avg=3
+            elapsed time(us): total=539,930 max=36,157 min=21 avg=23
+    593: compute region reached 22784 times
+        593: kernel launched 22784 times
+            grid: [4]  block: [128]
+             device time(us): total=45,575 max=4 min=2 avg=2
+            elapsed time(us): total=468,555 max=461 min=20 avg=20
+    612: update directive reached 91136 times
+        612: data copyout transfers: 91136
+             device time(us): total=639,726 max=419 min=5 avg=7
+    658: compute region reached 22784 times
+        658: kernel launched 22784 times
+            grid: [4]  block: [128]
+             device time(us): total=68,388 max=6 min=3 avg=3
+            elapsed time(us): total=509,248 max=47 min=21 avg=22
+    658: update directive reached 91136 times
+        658: data copyin transfers: 91136
+             device time(us): total=476,651 max=20 min=3 avg=5
+    731: compute region reached 22784 times
+        731: kernel launched 22784 times
+            grid: [4]  block: [128]
+             device time(us): total=68,362 max=5 min=3 avg=3
+            elapsed time(us): total=503,963 max=44 min=21 avg=22
+        731: reduction kernel launched 22784 times
+            grid: [2]  block: [256]
+             device time(us): total=46,618 max=4 min=2 avg=2
+            elapsed time(us): total=484,373 max=30 min=20 avg=21
+    731: data region reached 45568 times
+        731: data copyin transfers: 22784
+             device time(us): total=91,298 max=10 min=2 avg=4
+        737: data copyout transfers: 22784
+             device time(us): total=160,260 max=13 min=5 avg=7
+    740: compute region reached 22784 times
+        740: kernel launched 22784 times
+            grid: [4]  block: [128]
+             device time(us): total=68,363 max=5 min=3 avg=3
+            elapsed time(us): total=508,086 max=43 min=21 avg=22
+        740: reduction kernel launched 22784 times
+            grid: [2]  block: [256]
+             device time(us): total=46,272 max=5 min=2 avg=2
+            elapsed time(us): total=482,380 max=30 min=20 avg=21
+    740: data region reached 45568 times
+        740: data copyin transfers: 22784
+             device time(us): total=92,471 max=42 min=4 avg=4
+        746: data copyout transfers: 22784
+             device time(us): total=159,758 max=12 min=5 avg=7
+    752: compute region reached 22784 times
+        752: kernel launched 22784 times
+            grid: [4]  block: [128]
+             device time(us): total=45,575 max=4 min=2 avg=2
+            elapsed time(us): total=486,189 max=29 min=20 avg=21

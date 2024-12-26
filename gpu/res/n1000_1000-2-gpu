@@ -1,0 +1,58 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297541: <mpiexec -n 2 ./a.out> in cluster <MSUCluster> Exited
+
+Job <mpiexec -n 2 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 07:21:30 2024
+Job was executed on host(s) <2*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 07:21:31 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 07:21:31 2024
+Terminated at Thu Dec 26 07:44:10 2024
+Results reported at Thu Dec 26 07:44:10 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 2 ./a.out
+------------------------------------------------------------
+
+Exited with exit code 139.
+
+Resource usage summary:
+
+    CPU time :                                   2712.37 sec.
+    Max Memory :                                 9293 MB
+    Average Memory :                             4850.57 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                21
+    Run time :                                   1361 sec.
+    Turnaround time :                            1360 sec.
+
+The output (if any) follows:
+
+[polus-c4-ib:67397] *** Process received signal ***
+[polus-c4-ib:67398] *** Process received signal ***
+[polus-c4-ib:67397] Signal: Segmentation fault (11)
+[polus-c4-ib:67397] Signal code: Invalid permissions (2)
+[polus-c4-ib:67397] Failing at address: 0x1000020e1828
+[polus-c4-ib:67398] Signal: Segmentation fault (11)
+[polus-c4-ib:67398] Signal code: Invalid permissions (2)
+[polus-c4-ib:67398] Failing at address: 0x1000020e1828
+[polus-c4-ib:67397] [ 0] [polus-c4-ib:67398] [ 0] [0x100000050478]
+[polus-c4-ib:67397] [ 1] [0x1f5]
+[polus-c4-ib:67397] [ 2] ./a.out[0x1000e478]
+[polus-c4-ib:67397] [ 3] [0x100000050478]
+[polus-c4-ib:67398] [ 1] [0x1f4]
+[polus-c4-ib:67398] [ 2] ./a.out[0x1000e478]
+[polus-c4-ib:67398] [ 3] /lib64/libc.so.6(+0x24980)[0x100001f24980]
+[polus-c4-ib:67397] [ 4] /lib64/libc.so.6(+0x24980)[0x100001f24980]
+[polus-c4-ib:67398] [ 4] /lib64/libc.so.6(__libc_start_main+0xc4)[0x100001f24b74]
+[polus-c4-ib:67397] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xc4)[0x100001f24b74]
+[polus-c4-ib:67398] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 0 with PID 0 on node polus-c4-ib exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

@@ -1,0 +1,96 @@
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1296803: <mpiexec -n 1 ./a.out> in cluster <MSUCluster> Done
+
+Job <mpiexec -n 1 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Wed Dec 25 08:35:24 2024
+Job was executed on host(s) <polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Wed Dec 25 08:35:25 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Wed Dec 25 08:35:25 2024
+Terminated at Wed Dec 25 08:35:26 2024
+Results reported at Wed Dec 25 08:35:26 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 1 ./a.out
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.63 sec.
+    Max Memory :                                 1 MB
+    Average Memory :                             1.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              1
+    Max Threads :                                1
+    Run time :                                   6 sec.
+    Turnaround time :                            2 sec.
+
+The output (if any) follows:
+
+22784 0.391677
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297420: <mpiexec -n 1 ./a.out> in cluster <MSUCluster> Exited
+
+Job <mpiexec -n 1 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 00:43:08 2024
+Job was executed on host(s) <polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 00:43:08 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 00:43:08 2024
+Terminated at Thu Dec 26 00:43:12 2024
+Results reported at Thu Dec 26 00:43:12 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 1 ./a.out
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.35 sec.
+    Max Memory :                                 35 MB
+    Average Memory :                             24.33 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                10
+    Run time :                                   4 sec.
+    Turnaround time :                            4 sec.
+
+The output (if any) follows:
+
+
+Accelerator Kernel Timing data
+/polusfs/home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu/mpi+omp.cpp
+  main  NVIDIA  devicenum=0
+    time(us): 35
+    404: compute region reached 1 time
+        404: kernel launched 1 time
+            grid: [4]  block: [128]
+             device time(us): total=0 max=0 min=0 avg=0
+    404: data region reached 2 times
+        404: data copyin transfers: 4
+             device time(us): total=35 max=15 min=6 avg=8
+call to cuMemFreeHost returned error 700: Illegal address during kernel execution
+
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[6348,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------

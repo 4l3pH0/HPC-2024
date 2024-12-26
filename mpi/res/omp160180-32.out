@@ -1,0 +1,43 @@
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1284895: <OMP_NUM_THREADS=32 mpiexec ./omp160180> in cluster <MSUCluster> Done
+
+Job <OMP_NUM_THREADS=32 mpiexec ./omp160180> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Wed Dec 18 18:36:49 2024
+Job was executed on host(s) <polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <normal>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Wed Dec 18 18:44:31 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/mpi/isit/fin> was used as the working directory.
+Started at Wed Dec 18 18:44:31 2024
+Terminated at Wed Dec 18 18:46:43 2024
+Results reported at Wed Dec 18 18:46:43 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+OMP_NUM_THREADS=32 mpiexec ./omp160180
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   4176.75 sec.
+    Max Memory :                                 75 MB
+    Average Memory :                             64.50 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                42
+    Run time :                                   132 sec.
+    Turnaround time :                            594 sec.
+
+The output (if any) follows:
+
+OpenMP is supported!
+377170 130.653942
+
+
+PS:
+
+Read file <omp160180-32.err> for stderr output of this job.
+

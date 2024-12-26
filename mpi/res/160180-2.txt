@@ -1,0 +1,42 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1283237: <mpiexec ./160180> in cluster <MSUCluster> Done
+
+Job <mpiexec ./160180> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Tue Dec 17 21:16:55 2024
+Job was executed on host(s) <2*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <normal>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Tue Dec 17 21:18:55 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/mpi/isit/fin> was used as the working directory.
+Started at Tue Dec 17 21:18:55 2024
+Terminated at Tue Dec 17 21:26:11 2024
+Results reported at Tue Dec 17 21:26:11 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec ./160180
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   870.30 sec.
+    Max Memory :                                 123 MB
+    Average Memory :                             121.06 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                14
+    Run time :                                   436 sec.
+    Turnaround time :                            556 sec.
+
+The output (if any) follows:
+
+377170 434.839019
+
+
+PS:
+
+Read file <160180-2-err.txt> for stderr output of this job.
+

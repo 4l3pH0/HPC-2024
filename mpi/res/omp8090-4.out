@@ -1,0 +1,49 @@
+Sender: LSF System <lsfadmin@polus-c2-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1283654: <my_job> in cluster <MSUCluster> Done
+
+Job <my_job> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Wed Dec 18 05:37:28 2024
+Job was executed on host(s) <polus-c2-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Wed Dec 18 05:37:28 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/mpi/isit/fin> was used as the working directory.
+Started at Wed Dec 18 05:37:28 2024
+Terminated at Wed Dec 18 05:45:44 2024
+Results reported at Wed Dec 18 05:45:44 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -n 1
+#BSUB -J "my_job"
+#BSUB -o "omp8090-4.out"
+#BSUB -e "my_job%J.err"
+#BSUB -R "affinity[core(4)]"
+mpiexec ./omp8090
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1982.94 sec.
+    Max Memory :                                 71 MB
+    Average Memory :                             70.01 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                15
+    Run time :                                   501 sec.
+    Turnaround time :                            496 sec.
+
+The output (if any) follows:
+
+OpenMP is supported!
+2196576 495.589571
+
+
+PS:
+
+Read file <my_job1283654.err> for stderr output of this job.
+

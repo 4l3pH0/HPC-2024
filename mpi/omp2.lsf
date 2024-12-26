@@ -1,0 +1,6 @@
+#BSUB -n 1
+#BSUB -J "my_job"
+#BSUB -o "true-omp8090-2.out"
+#BSUB -e "my_job%J.err"
+#BSUB -R "affinity[core(2)]"
+mpiexec ./omp8090

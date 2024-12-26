@@ -1,0 +1,38 @@
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1297544: <mpiexec -n 1 ./a.out> in cluster <MSUCluster> Exited
+
+Job <mpiexec -n 1 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 07:46:04 2024
+Job was executed on host(s) <polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel24-619-15> in cluster <MSUCluster> at Thu Dec 26 07:46:05 2024
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15> was used as the home directory.
+</home_edu/edu-cmc-skmodel24-619/edu-cmc-skmodel24-619-15/gpu> was used as the working directory.
+Started at Thu Dec 26 07:46:05 2024
+Terminated at Thu Dec 26 07:52:24 2024
+Results reported at Thu Dec 26 07:52:24 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpiexec -n 1 ./a.out
+------------------------------------------------------------
+
+Exited with exit code 132.
+
+Resource usage summary:
+
+    CPU time :                                   377.00 sec.
+    Max Memory :                                 1064 MB
+    Average Memory :                             599.11 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                15
+    Run time :                                   381 sec.
+    Turnaround time :                            380 sec.
+
+The output (if any) follows:
+
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 0 with PID 0 on node polus-c3-ib exited on signal 4 (Illegal instruction).
+--------------------------------------------------------------------------
